@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.calculator.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/dobleVia"
+        android:name="com.example.calculator.doblevia.DobleVia"
+        android:label="fragment_doble_via"
+        tools:layout="@layout/fragment_doble_via" />
+    <fragment
+        android:id="@+id/aritmetica"
+        android:name="com.example.calculator.aritmetica.Aritmetica"
+        android:label="fragment_aritmetica"
+        tools:layout="@layout/fragment_aritmetica" />
+    <fragment
+        android:id="@+id/operacionesLogicas"
+        android:name="com.example.calculator.operacioneslgoicas.OperacionesLogicas"
+        android:label="fragment_operaciones_logicas"
+        tools:layout="@layout/fragment_operaciones_logicas" />
+</navigation>
